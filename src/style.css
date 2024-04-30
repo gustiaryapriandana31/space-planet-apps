@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    max-width: 100%; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.gradient {
+    background: radial-gradient(circle at 45% 45%, #07005A 0%, #112B5D 20%, #1E0734 95%);
+}
+
+.button-gradient {
+    background: linear-gradient(#3c93e6 30%, #104099 60%);
+}
+
+/* #planet-content {
+    background-image: url('./../img/4.png');
+    /* background: radial-gradient(circle at 45% 45%, #F0E2BF 0%, #969268 0%, #1E0734 95%); */
+/* } */
+
+.signal {
+    @apply bg-transparent absolute rounded-full border border-white;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(10px);
+    } 
+
+    0% {
+        transform: rotate(0deg) translateX(10px);
+    }
+}
+
+.planet-image {
+    animation: spin 45s ease-out infinite;
+    filter: drop-shadow(0 0 5px grey);
+}
+
+::webkit-scrollbar {
+    display: none;
+}
+
+.wave {
+    @apply absolute top-[1400px] left-0 w-full h-[100px] bg-[url('./../img/wave.png')] 
+}
+
+.wave#wave1 {
+    animation: animationWave 4s linear infinite;
+}
+
+.wave#wave2 {
+    animation: animationWave_2 4s linear infinite;
+}
+
+.wave#wave3 {
+    animation: animationWave 3s linear infinite;
+}
+
+.wave#wave4 {
+    animation: animationWave_2 3s linear infinite;
+}
+
+@keyframes animationWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+@keyframes animationWave_2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}

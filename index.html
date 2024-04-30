@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Space Exploration</title>
+    <link href="./css/space.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="box-sizing-border relative">
+    <!-- Hero Image -->
+    <section class="gradient relative w-screen pt-20 overflow-hidden">
+      <!-- Components Image -->
+      <div class="relative">
+        <img
+          src="img/satellite.png"
+          alt="Image of Satellite"
+          class="w-20 h-20 -top-20 left-5 md:w-36 md:h-36 absolute md:-top-10 md:left-3 -rotate-90 opacity-50"
+        />
+        <div id="signal" class="opacity-10">
+          <div
+            class="signal md:top-20 md:left-24 md:w-20 md:h-20 top-0 left-16 w-16 h-16"
+          ></div>
+          <div
+            class="signal md:top-24 md:left-28 md:w-24 md:h-24 top-4 left-20 w-20 h-20"
+          ></div>
+          <div
+            class="signal md:top-28 md:left-32 md:w-28 md:h-28 top-8 left-24 w-24 h-24"
+          ></div>
+          <div
+            class="signal md:top-32 md:left-36 md:w-32 md:h-32 top-12 left-28 w-28 h-28"
+          ></div>
+          <div
+            class="signal md:top-36 md:left-40 md:w-36 md:h-36 top-16 left-32 w-32 h-32"
+          ></div>
+          <div
+            class="signal md:top-40 md:left-44 md:w-40 md:h-40 top-20 left-36 w-36 h-36"
+          ></div>
+        </div>
+        <img
+          src="img/space-rocket.png"
+          alt="Image of Space Rocket"
+          id="space-rocket"
+          class="top-124 left-28 w-36 h-36 absolute -rotate-[50deg] opacity-50 md:top-[21rem] md:left-[45%]"
+        />
+        <img
+          src="img/rocket.png"
+          alt="Image of Rocket"
+          id="rocket"
+          class="hidden md:block md:w-32 md:h-32 md:absolute md:top-20 md:right-4 md:-rotate-90 md:opacity-25"
+        />
+        <img
+          src="img/cloud-01.png"
+          alt="Image Cloud"
+          id="cloud-01"
+          class="absolute w-1/2 top-128 right-0 md:top-72 md:w-2/3 md:h-64 md:-right-20"
+        />
+        <img
+          src="img/cloud-02.png"
+          alt="Image Cloud"
+          id="cloud-02"
+          class="absolute w-1/2 top-128 left-0 md:top-72 md:w-2/3 md:h-64 md:-left-36"
+        />
+        <img
+          src="img/cloud-03.png"
+          alt="Image Cloud"
+          id="cloud-03"
+          class="absolute top-132 -right-3 md:top-[22rem] w-[60%] md:h-52 md:-right-0"
+        />
+        <img
+          src="img/cloud-04.png"
+          alt="Image Cloud"
+          id="cloud-04"
+          class="absolute top-134 w-2/3 -left-5 md:top-[22rem] md:w-[60%] md:h-64 md:-left-3"
+        />
+      </div>
+
+      <!-- Hero Text -->
+      <h1
+        class="mt-8 text-white text-3xl w-screen p-2 mx-auto text-center font-roboto-mono font-bold md:mt-0 md:w-2/3 md:text-5xl md:leading-tight"
+      >
+        OPEN YOUR MIND, AWARE ABOUT YOUR GALAXY
+      </h1>
+      <p class="mt-4 text-white font-thin text-center font-roboto">
+        This is journey which will take you know and understand about space
+      </p>
+      <div
+        class="mt-12 md:flex md:flex-row md:justify-center md:items-center md:gap-7"
+      >
+        <button
+          class="block mx-auto my-5 text-lg text-white px-3 py-2 border border-orange-300 rounded-2xl font-roboto-mono text-center h-12 hover:font-bold hover:border-orange-500 hover:bg-transparent hover:text-orange-500 md:text-2xl md:px-6 md:mx-0 md:my-0">
+          <a href="space_fact.html">SPACE FACT</a>
+        </button>
+        <button
+          class="block mx-auto text-lg text-white px-3 py-2 border border-sky-300 rounded-2xl font-roboto-mono text-center h-12 hover:font-bold hover:border-sky-500 hover:bg-transparent hover:text-sky-500 md:text-2xl md:px-6 md:mx-0"
+        >
+          <a href="#planet-content">EXPLORE</a>
+        </button>
+      </div>
+
+      <!-- Planet Content -->
+      <section id="planet-content" class="mt-40 relative w-screen py-10 md:mt-80">
+        <div class="navigasi-planet mt-4">
+          <div class="flex flex-row justify-center gap-1 md:gap-3 opacity-60">
+            <a href="#planet-content" class="btn button" data-target="SOLAR"
+              ><img src="img/sun.png" alt="" class="w-8 md:w-10"
+            /></a>          
+            <a href="#planet-content" class="btn button" data-target="MERCURY"
+              ><img src="img/mercury.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="VENUS"
+              ><img src="img/venus.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="EARTH"
+              ><img src="img/earth.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="MARS"
+              ><img src="img/mars.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="JUPITER"
+              ><img src="img/jupiter.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="SATURN"
+              ><img src="img/saturn.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="URANUS"
+              ><img src="img/uranus.png" alt="" class="w-8 md:w-10"
+            /></a>
+            <a href="#planet-content" class="btn button" data-target="NEPTUNE"
+              ><img src="img/neptune.png" alt="" class="w-8 md:w-10"
+            /></a>
+          </div>
+        </div> 
+        <!-- Untuk menampilkan planetnya -->
+        <div id="planets"></div> 
+
+        <div class="planet" data-planet="SOLAR">
+          <h6
+            class="planet-name absolute top-72 z-10 left-24 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-60 md:text-5xl"
+          >
+            SOLAR
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/sun.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                
+A Biggest Star in the solar system 
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+                
+The Sun, at the center of our solar system, is a massive, luminous sphere of hot plasma, primarily composed of hydrogen and helium. It provides the energy that sustains life on Earth through the process of nuclear fusion, where hydrogen atoms fuse together to form helium, releasing tremendous amounts of energy in the process. This radiant energy is emitted as sunlight, which warms our planet and drives the Earth's climate and weather systems. The Sun's gravitational pull also governs the orbits of the planets, moons, asteroids, and comets within our solar system, holding them in their respective paths. Its immense gravity and intense radiation make it a crucial celestial body, shaping the dynamics and conditions of our solar neighborhood.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Rotation Time</p>
+                <p>Diameter</p>
+                <p>25,4 days</p>
+                <p>1.392.684 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="MERCURY">
+          <h6
+            class="planet-name absolute top-72 z-10 left-24 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-48 md:text-5xl"
+          >
+            MERCURY
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/mercury.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                The Planet Closest to the Sun.
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+                
+Mercury, the smallest planet in our solar system, orbits closest to the Sun. Its proximity to the Sun means that Mercury has an incredibly short year, taking just about 88 Earth days to complete one orbit. However, Mercury's rotation is relatively slow, resulting in one day on Mercury lasting approximately 59 Earth days. Despite its proximity to the Sun, Mercury's surface isn't continuously bathed in sunlight due to its lack of atmosphere to retain heat. Consequently, some parts of the planet experience perpetual darkness in craters near the poles. Mercury's surface is heavily cratered, similar to the Moon, and features extensive plains and scarps. The planet's surface also holds clues to its geological past, including evidence of volcanic activity and tectonic forces shaping its terrain. Despite being one of the least explored planets in our solar system, various space missions, including NASA's MESSENGER probe, have provided valuable insights into Mercury's composition, magnetic field, and geological history.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>88 days</p>
+                <p>4.879 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="VENUS">
+          <h6
+            class="planet-name absolute top-72 z-10 left-28 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-60 md:text-5xl"
+          >
+            VENUS
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/venus.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+              The Second Planet with a Thick Atmosphere.
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+                Venus, often referred to as Earth's sister planet, is the second planet from the Sun in our solar system. Named after the Roman goddess of love and beauty, Venus is sometimes called the "morning star" or the "evening star" due to its brightness in the sky. It is similar in size to Earth, with a diameter only slightly smaller. However, despite its similarity in size, Venus has a vastly different environment. The planet's thick atmosphere is composed mainly of carbon dioxide, with clouds of sulfuric acid, making its surface extremely hot, with temperatures reaching up to 900 degrees Fahrenheit (475 degrees Celsius). Venus rotates on its axis very slowly and in the opposite direction to most other planets, causing its retrograde motion. The surface of Venus is characterized by vast plains, highland regions, and thousands of volcanoes, indicating a history of volcanic activity. Although Venus is often described as Earth's twin, its hostile environment makes it inhospitable to life as we know it.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>225 days</p>
+                <p>12.104 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="EARTH">
+          <h6
+            class="planet-name absolute top-72 z-10 left-28 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-60 md:text-5xl"
+          >
+            EARTH
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/earth.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                
+The Planet Inhabited by Living Creatures
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+               
+Earth, the third planet from the Sun, is a unique celestial body in the solar system. It is the only known planet to harbor life, making it a precious oasis in the vastness of space. With its diverse ecosystems, rich biodiversity, and complex geological features, Earth provides a habitat for millions of species, including humans. Its atmosphere, composed primarily of nitrogen and oxygen, creates the conditions necessary for life to thrive. The planet's surface is characterized by vast oceans, expansive continents, towering mountains, and sprawling deserts, each contributing to its remarkable beauty and complexity. Earth plays a crucial role in sustaining life as we know it, providing essential resources such as water, air, and fertile soil. However, human activities have also posed significant challenges to the planet, including deforestation, pollution, and climate change. As stewards of this remarkable world, it is imperative that we strive to protect and preserve its delicate balance for future generations.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>23 hours 57 minutes</p>
+                <p>12.756,3 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="MARS">
+          <h6
+            class="planet-name absolute top-72 z-10 left-28 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-60 md:text-5xl"
+          >
+            MARS
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/mars.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                Planet Being Studied for Signs of Life There
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+               
+Mars, often referred to as the "Red Planet," is the fourth planet from the Sun in our solar system. It is named after the Roman god of war due to its reddish appearance, which is caused by iron oxide, or rust, on its surface. Mars has intrigued scientists and astronomers for centuries due to its potential to harbor life. While its surface is cold, dry, and barren, evidence suggests that liquid water may have flowed on its surface in the past, indicating the possibility of ancient microbial life. Mars has a thin atmosphere composed mostly of carbon dioxide, with surface features that include vast deserts, towering volcanoes, and deep canyons. Exploration of Mars has been a focus of space missions, with various orbiters, landers, and rovers sent to study its geology, climate, and potential for sustaining human life in the future.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>9 hours 56 minutes</p>
+                <p>6.794 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="JUPITER">
+          <h6
+            class="planet-name absolute top-72 z-10 left-28 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-52 md:text-5xl"
+          >
+            JUPITER
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/jupiter.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                
+The Largest Planet in the Solar System
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+                
+Jupiter, the largest planet in our solar system, is a gas giant known for its immense size and iconic swirling storms, notably the Great Red Spot, a massive storm larger than Earth itself. It's composed mainly of hydrogen and helium, with no solid surface. Jupiter has a powerful magnetic field and numerous moons, the four largest known as the Galilean moons: Io, Europa, Ganymede, and Callisto. It plays a crucial role in shaping the solar system's dynamics, acting as a "cosmic vacuum cleaner" due to its gravitational influence, often deflecting or capturing comets and asteroids that might otherwise strike inner planets like Earth. Jupiter's exploration has yielded valuable insights into planetary formation and dynamics, with ongoing studies contributing to our understanding of the outer solar system and beyond.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>29,42 years</p>
+                <p>139.516 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="SATURN">
+          <h6
+            class="planet-name absolute top-72 z-10 left-28 w-40 text-white p-1 text-2xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-64 md:text-4xl"
+          >
+            SATURN
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/saturn.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                The Most Beautiful Planet with Its Rings
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+                
+Saturn, the sixth planet from the Sun, is renowned for its striking rings, making it one of the most visually distinctive planets in our solar system. These rings, composed primarily of ice particles, dust, and rocky debris, encircle the planet and are visible even from Earth with a telescope. Beneath its mesmerizing appearance, Saturn is a gas giant similar in composition to Jupiter, predominantly consisting of hydrogen and helium. It has a vast and turbulent atmosphere characterized by swirling cloud bands and a prominent hexagonal jet stream at its north pole. Saturn is also home to numerous moons, the largest of which is Titan, known for its dense atmosphere and methane lakes. The planet's majestic rings and diverse moons make it a fascinating subject of study for astronomers seeking to understand the dynamics of planetary systems and the formation of celestial bodies.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>10 hours 40 minutes</p>
+                <p>120.536 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="URANUS">
+          <h6
+            class="planet-name absolute top-72 z-10 left-28 w-40 text-white p-1 text-2xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-60 md:text-4xl"
+          >
+            URANUS
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/uranus.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+               
+The planet consisting primarily of hydrogen and helium
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+             Uranus, the seventh planet from the Sun, is a unique celestial body in our solar system. It is often characterized by its distinct feature of being tilted on its side, rotating nearly perpendicular to its orbital plane. This axial tilt causes extreme seasonal variations, with each pole experiencing about 42 years of continuous sunlight followed by darkness. Uranus is composed primarily of hydrogen and helium, with a small fraction of water and methane. Its atmosphere, mostly consisting of hydrogen and helium, also contains traces of methane, which gives Uranus its blue-green hue. Despite being one of the gas giants, Uranus has a relatively low internal heat compared to Jupiter and Saturn. Its magnetosphere, generated by its icy mantle surrounding a rocky core, is unique among the planets. Uranus has a system of faint rings and a diverse array of moons, the largest being Titania and Oberon. Further exploration and study of Uranus are essential to unraveling the mysteries of this enigmatic ice giant.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>17 hours 14 minutes</p>
+                <p>50.724 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet hidden" data-planet="NEPTUNE">
+          <h6
+            class="planet-name absolute top-72 z-10 left-24 w-40 text-white p-1 text-3xl font-bold font-audiowide rounded-xl text-center md:top-92 md:left-48 md:text-5xl"
+          >
+            NEPTUNE
+          </h6>
+          <div
+            class="planet-profile my-2 box-sizing-border px-2 py-10 md:pl-20 md:flex md:flex-row md:items-center md:my-0"
+          >
+            <img
+              src="img/neptune.png"
+              alt="Image of Sun"
+              class="planet-image contrast-150 brightness-110 drop-shadow-lg animate-spin duration-300"
+            />
+            <div
+              class=" p-10 box-sizing-border rounded-2xl md:w-1/2 md:p-6 text-white shadow-2xl"
+            >
+              <h2
+                class="planet-title text-2xl font-bold text-center font-roboto mb-10 md:text-4xl text-orange-400"
+              >
+                Coldest Planet Due to Its Distance from the Sun."
+              </h2>
+              <p class="planet-details font-roboto text-md text-justify md:text-end">
+                
+Neptune, the eighth planet from the Sun, is a distant and mysterious world in our solar system. Named after the Roman god of the sea, Neptune is an ice giant, characterized by its striking blue coloration due to the presence of methane in its atmosphere. It's the fourth-largest planet by diameter and the third-most massive planet. Neptune has a dynamic atmosphere with high-speed winds, sometimes reaching up to 1,500 miles per hour (2,400 kilometers per hour), making it one of the windiest places in the solar system. It has a series of dark spots reminiscent of Jupiter's Great Red Spot, indicating active weather systems. Neptune has a faint ring system and a collection of moons, the largest of which is Triton, a unique moon that orbits in a retrograde direction, suggesting it may have been captured by Neptune's gravity in the distant past. Despite its remote location, Neptune continues to fascinate scientists with its complex weather patterns, unique moons, and enigmatic magnetic field.
+              </p>
+              <hr class="border-b-2 border-white mt-6 mb-4 opacity-60">
+              <div class="ml-8 font-poppins grid grid-cols-2 opacity-70 md:ml-32">
+                <p>Revolution Time</p>
+                <p>Diameter</p>
+                <p>16 hours</p>
+                <p>49.224 km</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+     <!-- Phenomenon -->
+     <section id="phenomenon" class="mt-32 relative p-7 md:p-12 text-white bg-black/65">
+        <div class="cards grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="card shadow-lg shadow-slate-600 rounded-md p-6 md:p-5 bg-[url('./../img/3.png')]">
+            <img src="img/solarecp.png" alt="Solar Eclipse Image">
+            <h4 class="mb-3 text-center font-bold text-lg border-b-2 border-b-orange-500">SOLAR ECLIPSE</h4>
+            <article class="text-start">
+              <p>A solar eclipse occurs when the Moon passes between the Earth and the Sun, blocking all or part of the Sun's light. There are two main types :</p>
+              <p class="mt-4 border border-orange-400 p-4 rounded-md"><strong>Total Solar Eclipse :</strong> This happens when the Moon completely covers the Sun, casting a shadow on Earth and temporarily darkening the sky within the path of totality.</p>
+              <p class="mt-4 border border-orange-400 p-4 rounded-md"><strong>Partial Solar Eclipse :</strong> In this case, the Moon only partially covers the Sun from the perspective of an observer on Earth, resulting in a partial dimming of sunlight.</p>
+              <p class="mt-4 text-center">Solar eclipses are remarkable natural phenomena and are extensively studied by scientists. It's important to use proper eye protection when observing a solar eclipse to prevent eye damage.</p>
+            </article>
+          </div>
+          <div class="card shadow-lg shadow-slate-600 rounded-md p-5 bg-[url('./../img/3.png')]">
+            <img src="img/lunarcp.png" alt="Lunar Eclipse Image">
+            <h4 class="mb-3 text-center font-bold text-lg border-b-2 border-b-orange-500">LUNAR ECLIPSE</h4>
+            <article class="text-start">
+              <p>A lunar eclipse occurs when the Earth passes between the Sun and the Moon, casting its shadow on the Moon. There are two main types: total lunar eclipses and partial lunar eclipses.</p>
+              <p class="mt-4 border border-orange-400 p-4 rounded-md"><strong>Total Lunar Eclipse : </strong> This happens when the Earth's umbra completely covers the Moon, giving it a reddish hue due to Earth's atmosphere bending sunlight towards it.</p>
+              <p class="mt-4 border border-orange-400 p-4 rounded-md"><strong>Partial Lunar Eclipse : </strong>In this case, only a part of the Moon enters Earth's umbra, resulting in a partial darkening of the lunar surface.</p>
+              <p class="mt-4 text-center">Lunar eclipses are fascinating astronomical events and are safe to observe with the naked eye. They provide valuable insights into celestial mechanics and are observed by scientists and enthusiasts worldwide.</p>
+            </article>
+          </div>
+          <div class="card shadow-lg shadow-slate-600 rounded-md p-5 bg-[url('./../img/3.png')]">
+            <img src="img/supernova.png" alt="Supernova Image">
+            <h4 class="mb-3 text-center font-bold text-lg border-b-2 border-b-orange-500">SUPERNOVA</h4>
+            <article class="text-justify">
+              <p>Supernova is a colossal explosion that occurs at the end of a massive star's life cycle. It releases an immense amount of energy, outshining entire galaxies for brief periods. Supernovae play a crucial role in cosmic evolution, dispersing heavy elements into space and triggering the formation of new stars and planets. The following are two types of supernova types : </p>
+              <p class="mt-4 border border-orange-400 p-4 rounded-md"><strong>Type I:</strong>caused by the sudden ignition of carbon and oxygen in a white dwarf,</p>
+              <p class="mt-4 border border-orange-400 p-4 rounded-md"><strong>Type II:</strong>resulting from the core collapse of a massive star.</p>
+            </article>
+          </div>
+          <div class="card shadow-lg shadow-slate-600 rounded-md p-5 bg-[url('./../img/3.png')]">
+            <img src="img/blackhole.png" alt="Blackhole Image" class="-rotate-12">
+            <h4 class="mb-3 text-center font-bold text-lg border-b-2 border-b-orange-500">BLACKHOLE</h4>
+            <article class="text-justify">
+              <p>A black hole is a region in space where gravity is so strong that nothing, not even light, can escape from it. They form when massive stars collapse under their own gravity at the end of their life cycles. Black holes come in different sizes, from stellar-mass black holes, formed from the remnants of massive stars, to supermassive black holes, which can be found at the centers of galaxies and have masses millions or even billions of times that of the Sun.</p>
+              
+            </article>
+          </div>
+        </div> 
+
+         
+     </section>
+
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#112B5D" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,186.7C384,171,480,117,576,117.3C672,117,768,171,864,165.3C960,160,1056,96,1152,90.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="relative bg-[#112B5D] text-white">
+        <div class="grid lg:grid-cols-4 gap-20 sm:grid-cols-1 p-20">
+            <div class="flex flex-col gap-5">
+                <h2 class="text-3xl text-orange-500 mt-20 font-audiowide">spaXor</h2>
+            </div>
+            <div>
+                <li class="text-[22px] list-none font-semibold text-orange-500 py-2 uppercase">
+                    Link
+                </li>
+                <li class="my-4 list-none"><a href="#planet-content">Planets</a></li>
+                <li class="my-4 list-none">Galaxy</li>
+                <li class="my-4 list-none"><a href="#">Home</a></li>
+                <li class="my-4 list-none"><a href="#phenomenon">Phenomenon</a></li>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <h2 class="text-[22px] font-semibold text-orange-500 py-2 uppercase">Contact</h2>
+                <p class="text-[16px] my-4">gustiaryapriandana@gmail.com</p>
+                <p class="text-[16px] my-4">0822 8196 3857</p>
+            </div>
+        </div>
+        <div class="text-center text-sm py-4 bg-[#112B5D] border-t-2 border-orange-500 md:text-lg">
+            <p>&copy; 2024 spaXor. Arya Priandana . All rights reserved.</p>
+    </footer>
+    <script src="space.js"></script>
+  </body>
+</html>
